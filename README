@@ -1,0 +1,58 @@
+# Hydronephrosis Detection using Deep Learning
+
+This project detects Hydronephrosis from ultrasound kidney images using Deep Learning models.
+
+## Overview
+
+Hydronephrosis is a condition where the kidney becomes swollen due to urine buildup. Early detection is important especially in pregnant women.
+
+This project uses transfer learning with MobileNet to classify ultrasound images into:
+
+- Normal
+- Hydronephrosis
+
+## Technologies Used
+
+- Python
+- TensorFlow
+- Streamlit
+- MobileNetV2
+- OpenCV
+
+## Project Workflow
+
+1. Collect ultrasound dataset
+2. Preprocess images
+3. Train CNN model
+4. Save trained model
+5. Deploy model using Streamlit
+
+## Run the Project
+
+Install dependencies
+pip install -r requirements.txt
+
+Run Streamlit app
+streamlit run app.py
+
+
+Dataset Structure
+dataset
+│
+├── Normal
+│   ├── img1.jpg
+│   ├── img2.jpg
+│
+├── Hydronephrosis
+│   ├── img1.jpg
+│   ├── img2.jpg
+
+hydronephrosis-detection-dl
+│
+├── app.py
+├── train_model.py
+├── predict.py
+├── requirements.txt
+├── README.md
+└── models
+    └── README_model.txt 
